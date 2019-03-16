@@ -10,6 +10,7 @@ import UIKit
 
 class MediaCell: UICollectionViewCell {
 
+    @IBOutlet weak var imageOfAlbum: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
