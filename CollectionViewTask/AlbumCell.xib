@@ -19,19 +19,22 @@
                 <rect key="frame" x="0.0" y="0.0" width="224" height="161"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gfvjhbvhbkb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slr-Xr-aP6">
-                        <rect key="frame" x="85" y="70" width="96" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slr-Xr-aP6">
+                        <rect key="frame" x="91" y="70" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="slr-Xr-aP6" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="MX6-gI-nvs"/>
+                <constraint firstItem="slr-Xr-aP6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Yuf-ZR-F21"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="224" height="161"/>
             <connections>
-                <outlet property="label1" destination="slr-Xr-aP6" id="iOw-As-ef6"/>
+                <outlet property="albumTitle" destination="slr-Xr-aP6" id="GAL-74-fM3"/>
             </connections>
             <point key="canvasLocation" x="153.59999999999999" y="127.28635682158921"/>
         </collectionViewCell>

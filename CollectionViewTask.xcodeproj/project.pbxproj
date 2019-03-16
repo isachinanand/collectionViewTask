@@ -16,6 +16,7 @@
 		A3ADBD40223CC29A00B581E8 /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3ADBD3E223CC29A00B581E8 /* AlbumCell.xib */; };
 		A3ADBD43223CD32600B581E8 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADBD41223CD32600B581E8 /* MediaCell.swift */; };
 		A3ADBD44223CD32600B581E8 /* MediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3ADBD42223CD32600B581E8 /* MediaCell.xib */; };
+		A3ADBD46223D1ABF00B581E8 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADBD45223D1ABF00B581E8 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A3ADBD3E223CC29A00B581E8 /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
 		A3ADBD41223CD32600B581E8 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
 		A3ADBD42223CD32600B581E8 /* MediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCell.xib; sourceTree = "<group>"; };
+		A3ADBD45223D1ABF00B581E8 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				A3ADBD3E223CC29A00B581E8 /* AlbumCell.xib */,
 				A3ADBD41223CD32600B581E8 /* MediaCell.swift */,
 				A3ADBD42223CD32600B581E8 /* MediaCell.xib */,
+				A3ADBD45223D1ABF00B581E8 /* Album.swift */,
 			);
 			path = CollectionViewTask;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				A346C265223CBE3A00A4A770 /* AppDelegate.swift in Sources */,
 				A3ADBD43223CD32600B581E8 /* MediaCell.swift in Sources */,
 				A3ADBD3F223CC29A00B581E8 /* AlbumCell.swift in Sources */,
+				A3ADBD46223D1ABF00B581E8 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
