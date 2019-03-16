@@ -11,13 +11,23 @@ import UIKit
 class SearchScreen: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
     
     @IBOutlet weak var albumcollectionView: UICollectionView!
+    @IBOutlet weak var mediaCollectionView: UICollectionView!
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if collectionView == self.albumcollectionView {
+            return 10 }
+        return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let albumCell: AlbumCell = collectionView.dequeueReusableCell(withReuseIdentifier: "album", for: indexPath) as! AlbumCell
-        return albumCell
+        if collectionView == albumcollectionView{
+            let albumCell: AlbumCell = collectionView.dequeueReusableCell(withReuseIdentifier: "album", for: indexPath) as! AlbumCell
+            return albumCell
+        }
+        else {
+            let mediaCell: MediaCell = collectionView.dequeueReusableCell(withReuseIdentifier: "media", for: indexPath) as! MediaCell
+            return mediaCell
+        }
+        
     }
 
     override func viewDidLoad() {
@@ -26,6 +36,10 @@ class SearchScreen: UIViewController,UICollectionViewDataSource,UICollectionView
        albumcollectionView.register(UINib(nibName: "AlbumCell" , bundle: nil), forCellWithReuseIdentifier: "album")
         albumcollectionView.dataSource = self
         albumcollectionView.delegate = self
+        mediaCollectionView.register(UINib(nibName: "MediaCell" , bundle: nil), forCellWithReuseIdentifier: "media")
+        mediaCollectionView.dataSource = self
+        mediaCollectionView.delegate = self
+        
     }
 
 

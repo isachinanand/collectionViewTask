@@ -14,6 +14,8 @@
 		A346C26F223CBE3C00A4A770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A346C26D223CBE3C00A4A770 /* LaunchScreen.storyboard */; };
 		A3ADBD3F223CC29A00B581E8 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADBD3D223CC29A00B581E8 /* AlbumCell.swift */; };
 		A3ADBD40223CC29A00B581E8 /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3ADBD3E223CC29A00B581E8 /* AlbumCell.xib */; };
+		A3ADBD43223CD32600B581E8 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADBD41223CD32600B581E8 /* MediaCell.swift */; };
+		A3ADBD44223CD32600B581E8 /* MediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3ADBD42223CD32600B581E8 /* MediaCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A346C270223CBE3C00A4A770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3ADBD3D223CC29A00B581E8 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		A3ADBD3E223CC29A00B581E8 /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
+		A3ADBD41223CD32600B581E8 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
+		A3ADBD42223CD32600B581E8 /* MediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				A346C270223CBE3C00A4A770 /* Info.plist */,
 				A3ADBD3D223CC29A00B581E8 /* AlbumCell.swift */,
 				A3ADBD3E223CC29A00B581E8 /* AlbumCell.xib */,
+				A3ADBD41223CD32600B581E8 /* MediaCell.swift */,
+				A3ADBD42223CD32600B581E8 /* MediaCell.xib */,
 			);
 			path = CollectionViewTask;
 			sourceTree = "<group>";
@@ -130,6 +136,7 @@
 			files = (
 				A346C26F223CBE3C00A4A770 /* LaunchScreen.storyboard in Resources */,
 				A346C26C223CBE3C00A4A770 /* Assets.xcassets in Resources */,
+				A3ADBD44223CD32600B581E8 /* MediaCell.xib in Resources */,
 				A346C26A223CBE3A00A4A770 /* Main.storyboard in Resources */,
 				A3ADBD40223CC29A00B581E8 /* AlbumCell.xib in Resources */,
 			);
@@ -144,6 +151,7 @@
 			files = (
 				A346C267223CBE3A00A4A770 /* SearchScreen.swift in Sources */,
 				A346C265223CBE3A00A4A770 /* AppDelegate.swift in Sources */,
+				A3ADBD43223CD32600B581E8 /* MediaCell.swift in Sources */,
 				A3ADBD3F223CC29A00B581E8 /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

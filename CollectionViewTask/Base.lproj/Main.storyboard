@@ -45,17 +45,46 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ypm-Pz-gF9"/>
                                 </connections>
                             </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FJT-8o-Fhp" userLabel="Media Collection View">
+                                <rect key="frame" x="0.0" y="130" width="375" height="537"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iG6-zd-L3c">
+                                    <size key="itemSize" width="116" height="107"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="media" id="Is1-rf-DBw">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="107"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="116" height="107"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bSr-LL-ahU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cBC-Hm-uLj"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rmq-1l-H7i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4W4-BF-Nb1"/>
                             <constraint firstItem="rmq-1l-H7i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ETD-E7-LWv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FJT-8o-Fhp" secondAttribute="bottom" id="Hg1-YW-ZHw"/>
+                            <constraint firstItem="FJT-8o-Fhp" firstAttribute="top" secondItem="rmq-1l-H7i" secondAttribute="bottom" constant="10" id="X0e-lI-3zi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rmq-1l-H7i" secondAttribute="trailing" id="iRW-cs-jes"/>
+                            <constraint firstItem="FJT-8o-Fhp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lND-Dk-KiZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FJT-8o-Fhp" secondAttribute="trailing" id="oT2-Ml-NKT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="albumcollectionView" destination="rmq-1l-H7i" id="6Ki-dt-eOU"/>
+                        <outlet property="mediaCollectionView" destination="FJT-8o-Fhp" id="9ob-be-g1l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
