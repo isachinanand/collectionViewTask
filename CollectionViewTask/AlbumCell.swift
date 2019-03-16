@@ -11,6 +11,7 @@ import UIKit
 class AlbumCell: UICollectionViewCell {
     
 
+    @IBOutlet weak var label1: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
